@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./modern.css";
-
+import Footer from "../Footer/footer";
 import modernjs1 from "../../assets/modernjs1.jpg";
 import house1 from "../../assets/house1.jpg";
 import house2 from "../../assets/house2.jpg";
@@ -14,6 +14,7 @@ export default function Modern() {
   const [selectedStyle, setSelectedStyle] = useState("modern");
 
   return (
+    <>
     <div className="modern-wrapper">
 
       {/* FIXED HEADER */}
@@ -96,7 +97,9 @@ export default function Modern() {
           </p>
         </div>
       </div>
-
     </div>
+    <Footer />
+
+    </>
   );
 }

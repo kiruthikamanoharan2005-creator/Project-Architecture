@@ -6,7 +6,7 @@ import tLiving from "../../assets/t-living.jpg";
 import tKitchen from "../../assets/t-kitchen.png";
 import tBedroom from "../../assets/t-bedroom2.jpg";
 import tBackyard from "../../assets/t-backyard.jpg";
-
+import Footer from "../Footer/footer";
 import Header from "../Header/header";
 
 export default function TraditionalHousePage() {
@@ -108,6 +108,7 @@ export default function TraditionalHousePage() {
           </div>
         </section>
       ))}
+      <Footer />
     </div>
   );
 }

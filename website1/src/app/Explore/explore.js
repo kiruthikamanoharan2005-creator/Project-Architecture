@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./explore.css";
 import Header from "../Header/header";
+import Footer from "../Footer/footer";
 
 const imageSources = {
   modern: [
@@ -32,11 +33,11 @@ const imageSources = {
   terrace: [
     "https://thearchitectsdiary.com/wp-content/uploads/2021/09/AG7_5301-2-1024x696.jpg",
     "https://st.hzcdn.com/simgs/2af17de90915b056_14-7946/_.jpg",
-    "https://5.imimg.com/data5/SELLER/Default/2025/6/523089560/AW/SQ/ON/93952476/residential-terrace-garden-designing-service-500x500.jpg0",
-    "https://i.pinimg.com/236x/3f/d4/37/3fd437d9e22a265fdf3e1ba808bf6f13.jpgc",
+    "https://st.hzcdn.com/simgs/dd71915a053b45d6_14-6092/home-design.jpg",
+    "https://images.homify.com/v1459333934/p/photo/image/1428946/10.jpg",
     "https://apicms.thestar.com.my/uploads/images/2024/09/03/2893944.webp",
     "https://www.wedezinestudio.com/blogs/wp-content/uploads/2025/06/terrace-interior-design222-scaled.webp",
-    "https://materialdepot-images-hbh2cjbvbtfmanhx.z02.azurefd.net/application_image/modern-rooftop-terrace-with-geometric-tiles-and-pergola-8192949399.png?width=600",
+    "https://media.homify.com/p/photo/projects/0eb3a547-cd7e-43d3-a08e-b1c8be4ea09a.jpg",
     "https://i.pinimg.com/564x/cc/40/99/cc40990742ee3fa49a167bf396586fe5.jpg",
     "https://www.conarch.co/wp-content/uploads/2017/05/IMG_2147-e1494520812177.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJHG9qBjkwbJazy_VWSzJ-C3iumNhStiV_XFQtwyENbpjYIQjKAeZ1piqo1mkgwgX2cY&usqp=CAUc"
@@ -52,7 +53,7 @@ const imageSources = {
     "https://www.caldwellcline.com/wp-content/uploads/2020/09/017-1080x675.jpg",
     "https://ik.imagekit.io/saubldfer/hamstech-blog/wp-content/uploads/2021/09/Top-Interior-Design-Trends-to-Design-Your-Dream-Home.jpg",
     "https://sharkeycustomhomes.com/sites/default/files/oxford-parade-of-homes--_DSC03979_80_81_0.jpg",
-    "https://images.unsplash.com/photo-1616627562862-0a4ddc881c34"
+    "https://thearchitectsdiary.com/wp-content/uploads/2023/11/Indian-traditional-interior-design-6-jpg.webp"
   ],
 
   exterior: [
@@ -70,7 +71,7 @@ const imageSources = {
 
   door: [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmReu4L-0sTIFufzCmvevLGmmxjuNOvcXL_3GWc4YdOYVVLLWD9hLyaqSTFi766y5rY4M&usqp=CAU",
-    "https://in.zohocommercecdn.com/product-images/ae7623d4-a146-4f84-aa4f-3af0d7e9e013.jpg/1654361000001355031/600x600?storefront_domain=www.bharatdoornirman.com",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyE97xUnwRWLM-047eLI-JuIRKAdKr_RdfQ&s",
     "https://i.pinimg.com/236x/52/c5/e6/52c5e6daf244ee30a98489f541363a90.jpg",
     "https://img.staticmb.com/mbcontent/images/crop/uploads/2025/8/modern_wwoden_door_design_600_900.jpg.webp",
     "https://cms.interiorcompany.com/wp-content/uploads/2024/07/single-main-door-with-sleek-metallic-strips.webp",
@@ -85,7 +86,7 @@ const imageSources = {
     "https://assets-news.housing.com/news/wp-content/uploads/2022/09/12000436/roof-designs-7.png",
     "https://i.pinimg.com/564x/af/b1/7d/afb17d68ff79e24b2f6e3ac45fda078a.jpg",
     "https://i.pinimg.com/736x/8b/06/dc/8b06dc710caa522c6feb2830fb578c56.jpg",
-    "https://i.pinimg.com/736x/4b/73/30/4b733084b4702d5b03943c767086c51f.jpgf",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUum07gv0WwrMzKiiDdjMIps8-0_dz6Kyc6g&s",
     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfRrgoZ4q0rqzBPXDoqh1OE8mLBvkZtgpkH5iAhz0cH1mTxVIGeNxq8Eg_JXr4vkxQShVivH8evrxmbGkY8JNVRjTcHFNJ4O6jQPoJZg3Oz8abHvb5qhdwG_qrf8vTLoWEFrqtKPsUT7py/s1600/40-lakh-house-exterior-elevation.jpg",
     "https://cpimg.tistatic.com/05692293/b/4/House-Roof-Sheet.jpg",
     "https://images.jdmagicbox.com/quickquotes/images_main/school-roofing-sheet-weather-resistant-2101552058-juzrhxgt.jpg",
@@ -198,5 +199,6 @@ export default function HouseFilterPage() {
         </section>
       </main>
     </div>
+    
   );
 }
