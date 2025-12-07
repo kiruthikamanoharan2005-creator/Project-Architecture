@@ -1,0 +1,141 @@
+/* -------- FORM STYLE -------- */
+
+.contact-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #d0d0d0;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 14px;
+  background: #6c63ff;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.submit-btn:hover {
+  background: #584fe9;
+}
+
+.error-text {
+  color: #ff4d4d;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-box {
+  width: 90%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+
+  transform: scale(0.7);
+  opacity: 0;
+  animation: popupZoom 0.3s forwards;
+}
+
+@keyframes popupZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+}
+
+.popup-close:hover {
+  color: #000;
+}
+
+.popup-icon {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.popup-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-btn:hover {
+  background: #3e8c40;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  .popup-box {
+    padding: 20px;
+  }
+}

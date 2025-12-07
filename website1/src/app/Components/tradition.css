@@ -1,0 +1,202 @@
+/* -----------------------------------------
+   GOOGLE FONTS
+------------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap");
+
+/* -----------------------------------------
+   COLOR VARIABLES
+------------------------------------------ */
+:root {
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Inter", sans-serif;
+
+  --accent: #a45a1f;
+  --text-dark: #242424;
+  --text-medium: #555;
+
+  /* Soft Premium Background Colors */
+  --beige: #fff3e2;
+  --peach: #ffe9d2;
+  --blue-light: #e7f1ff;
+  --blue-soft: #d8e7ff;
+}
+
+/* -----------------------------------------
+   BODY
+------------------------------------------ */
+body {
+  font-family: var(--body-font);
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------
+   PAGE CONTAINER
+------------------------------------------ */
+.page-container {
+  width: 100%;
+  margin: 0;
+  padding-top: 95px;
+}
+
+/* -----------------------------------------
+   PAGE TITLE
+------------------------------------------ */
+.top-title {
+  padding: 40px 60px;
+  text-align: left;
+}
+
+.top-title h1 {
+  font-size: 30px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 1px;
+}
+
+.top-title p {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--text-medium);
+  margin-top: 6px;
+}
+
+/* -----------------------------------------
+   SECTION / ALTERNATING LAYOUT
+------------------------------------------ */
+.full-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 70px 70px;
+  gap: 55px;
+
+  /* Fade animation */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+/* ODD SECTIONS */
+.full-section:nth-child(odd) {
+  background: 
+    linear-gradient(135deg, var(--beige), var(--peach), #ffffff),
+    url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  background-size: cover;
+}
+
+/* EVEN SECTIONS */
+.full-section:nth-child(even) {
+  background: 
+    linear-gradient(135deg, var(--blue-light), var(--blue-soft), #ffffff),
+    url("https://www.transparenttextures.com/patterns/crossword.png");
+  background-size: cover;
+}
+
+/* REVERSE ROWS */
+.full-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* -----------------------------------------
+   IMAGES
+------------------------------------------ */
+.full-section img {
+  width: 45%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  transition: 0.4s ease;
+}
+
+.full-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* -----------------------------------------
+   TEXT CONTENT
+------------------------------------------ */
+.content {
+  width: 50%;
+}
+
+.content h2 {
+  font-size: 38px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #333;
+  position: relative;
+  padding-left: 5px;
+}
+
+.content ul li::before {
+  content: "•";
+  color: var(--accent);
+  font-size: 20px;
+  position: absolute;
+  left: -12px;
+  top: 0;
+}
+
+/* -----------------------------------------
+   ANIMATIONS
+------------------------------------------ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* -----------------------------------------
+   RESPONSIVE STYLES
+------------------------------------------ */
+@media (max-width: 950px) {
+  .full-section,
+  .full-section.reverse {
+    flex-direction: column;
+    padding: 40px 25px;
+  }
+
+  .full-section img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .top-title {
+    padding: 20px;
+  }
+
+  .top-title h1 {
+    font-size: 36px;
+  }
+}

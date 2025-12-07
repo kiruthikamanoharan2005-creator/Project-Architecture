@@ -1,0 +1,177 @@
+/* ===== GLOBAL ===== */
+.restaurant-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #f8f7f3;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 80vh;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  background: #d35400;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #e67e22;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  margin: 80px auto;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-left h2 {
+  font-size: 32px;
+}
+
+.about-left p {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #555;
+}
+
+.learn-btn {
+  padding: 10px 22px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.about-right img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== MENU ===== */
+.menu {
+  text-align: center;
+  padding: 60px 0;
+  background: #fff;
+}
+
+.menu h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.dish-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  padding-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px 14px 0 0;
+  object-fit: cover;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+}
+
+.dish-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.dish-card p {
+  font-size: 17px;
+  color: #444;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f3efe7;
+  margin-top: 40px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.reserve-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #b33939;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.reserve-btn:hover {
+  background: #e55039;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 18px;
+  background: #111;
+  color: #ddd;
+  margin-top: 40px;
+}
