@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./explore.css";
 import Header from "../Header/header";
-import Footer from "../Footer/footer";
 
 const imageSources = {
   modern: [
@@ -42,6 +41,7 @@ const imageSources = {
     "https://www.conarch.co/wp-content/uploads/2017/05/IMG_2147-e1494520812177.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJHG9qBjkwbJazy_VWSzJ-C3iumNhStiV_XFQtwyENbpjYIQjKAeZ1piqo1mkgwgX2cY&usqp=CAUc"
   ],
+
 
   interior: [
     "https://st.hzcdn.com/simgs/69d1da940b4f3bed_14-6004/_.jpg",

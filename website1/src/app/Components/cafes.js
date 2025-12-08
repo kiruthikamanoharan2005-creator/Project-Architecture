@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./cafes.css";
 import Header from "../Header/header";
 import Footer from "../Footer/footer";
-import cplan1 from "../../assets/c-plan1.jpg";
 import cplan2 from "../../assets/c-plan2.jpg";
 import cplan3 from "../../assets/c-plan3.jpg";
 

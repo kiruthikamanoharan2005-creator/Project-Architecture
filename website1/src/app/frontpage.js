@@ -1,30 +1,22 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./frontpage.css";
-import Contact from "./Contact/contact";
 import modern1 from "../assets/modern1.jpg";
 import traditional from "../assets/traditional.jpg";
 import cafenew from "../assets/cafenew.jpg";
-import restaurant from "../assets/restaurant.jpg";
-import office from "../assets/office.jpg";
-import apartment from "../assets/apartment.jpg";
-import house1 from "../assets/house1.jpg";
-import house2 from "../assets/house2.jpg";
-import house3 from "../assets/house3.jpg";
 import interior2 from "../assets/interior2.jpg";
 import Header from "../app/Header/header";
 import Footer from "./Footer/footer";
 
-
 import { useNavigate } from "react-router-dom";
 
-const architectureImages = [
-  { id: 1, title: "Modern House", src: house1, style: "modern" },
-  { id: 2, title: "Traditional House", src: house2, style: "traditional" },
-  { id: 3, title: "Apartment", src: apartment, style: "apartment" },
-  { id: 4, title: "Office Building", src: office, style: "office" },
-  { id: 5, title: "Café Design", src: cafenew, style: "cafe" },
-  { id: 6, title: "Restaurant Design", src: restaurant, style: "restaurant" },
-];
+// const architectureImages = [
+//   { id: 1, title: "Modern House", src: house1, style: "modern" },
+//   { id: 2, title: "Traditional House", src: house2, style: "traditional" },
+//   { id: 3, title: "Apartment", src: apartment, style: "apartment" },
+//   { id: 4, title: "Office Building", src: office, style: "office" },
+//   { id: 5, title: "Café Design", src: cafenew, style: "cafe" },
+//   { id: 6, title: "Restaurant Design", src: restaurant, style: "restaurant" },
+// ];
 
 export const architecturalPaths = [
   { name: "Modern House", img: modern1, link: "/modern" },
@@ -37,21 +29,16 @@ export const architecturalPaths = [
 
 function FrontPage() {
   const navigate = useNavigate();
-  const [selectedStyle, setSelectedStyle] = useState("all");
 const [showPopup, setShowPopup] = useState(false);
 
 const openPopup = () => setShowPopup(true);
 const closePopup = () => setShowPopup(false);
 
-  const filteredImages =
-    selectedStyle === "all"
-      ? architectureImages
-      : architectureImages.filter((img) => img.style === selectedStyle);
 
   return (
     <div className="frontpage-container">
       {/* Navbar */}
-      <Header setSelectedStyle={setSelectedStyle} />
+      <Header />
 
       {/* Hero Section */}
       <section className="hero redesigned-hero">

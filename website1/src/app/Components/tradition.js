@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./tradition.css";
 
 import tExterior from "../../assets/indian-exterior1.jpg";
@@ -10,7 +9,6 @@ import Footer from "../Footer/footer";
 import Header from "../Header/header";
 
 export default function TraditionalHousePage() {
-  const [selectedStyle, setSelectedStyle] = useState("traditional");
 
   const sections = [
     {
@@ -79,7 +77,7 @@ export default function TraditionalHousePage() {
     <div className="page-container">
 
       {/* FIXED HEADER */}
-      <Header setSelectedStyle={setSelectedStyle} />
+      <Header />
 
       {/* PAGE TITLE */}
       <div className="top-title">

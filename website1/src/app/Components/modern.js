@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./modern.css";
 import Footer from "../Footer/footer";
 import modernjs1 from "../../assets/modernjs1.jpg";
@@ -11,14 +10,14 @@ import ceiling1 from "../../assets/ceiling1.jpg";
 import Header from "../Header/header";
 
 export default function Modern() {
-  const [selectedStyle, setSelectedStyle] = useState("modern");
+
 
   return (
     <>
     <div className="modern-wrapper">
 
       {/* FIXED HEADER */}
-      <Header setSelectedStyle={setSelectedStyle} />
+      <Header />
 
       {/* HERO BANNER */}
       <section className="hero-banner">
