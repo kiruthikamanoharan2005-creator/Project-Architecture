@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
+import logo from "../../assets/logo.png";
 import "./header.css";
 
 function Header() {
@@ -9,13 +9,12 @@ function Header() {
 
   return (
     <header className="navbar fixed-header">
-      {/* BRAND LOGO + TITLE */}
       <div className="brand">
-        <FaHome className="home-icon" />
-        <span>Creative Earth Architect</span>
-      </div>
+  <img src={logo} alt="Creative Earth Architect Logo" className="logo" />
+  <span>Creative Earth Architect</span>
+</div>
 
-      {/* HAMBURGER (Mobile) */}
+
       <div
         className={`hamburger ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -25,21 +24,17 @@ function Header() {
         <span></span>
       </div>
 
-      {/* NAVIGATION MENU */}
       <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
 
-        {/* Home */}
         <Link to="/" onClick={() => setMenuOpen(false)}>
           Home
         </Link>
 
-        {/* Contact */}
         <Link to="/contact" onClick={() => setMenuOpen(false)}>
           Contact
         </Link>
 
-        {/* Categories with Dropdown */}
-        {/* Categories with Dropdown */}
+        
         <div
           className="dropdown"
           onMouseEnter={() => setDropdownOpen(true)}
@@ -72,7 +67,6 @@ function Header() {
         </div>
 
 
-        {/* Projects */}
         <Link to="/projects" onClick={() => setMenuOpen(false)}>
           Projects
         </Link>

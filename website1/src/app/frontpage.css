@@ -560,6 +560,7 @@ body {
   margin: 0;
 }
 
+
 /* Copyright Bar */
 .copyright-bar {
   text-align: center;
@@ -583,6 +584,73 @@ body {
 }
 
 
+/* ===================== */
+/* SLIDE ANIMATION SETUP */
+/* ===================== */
+
+/* ===== FLIP IN ANIMATION ===== */
+
+.bounce-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s cubic-bezier(0.22, 1.61, 0.36, 1);
+}
+.bounce-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* Slide Up */
+.slide-up {
+  transform: translateY(40px);
+}
+.slide-up.active {
+  transform: translateY(0);
+}
+
+/* Slide Down */
+.slide-down {
+  transform: translateY(-40px);
+}
+.slide-down.active {
+  transform: translateY(0);
+}
+
+/* Slide Left */
+.slide-left {
+  transform: translateX(-60px);
+}
+.slide-left.active {
+  transform: translateX(0);
+}
+
+/* Slide Right */
+.slide-right {
+  transform: translateX(60px);
+}
+.slide-right.active {
+  transform: translateX(0);
+}
+
+/* Smooth appearance */
+.reveal,
+.slide-up,
+.slide-down,
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+}
+
+.reveal.active,
+.slide-up.active,
+.slide-down.active,
+.slide-left.active,
+.slide-right.active {
+  opacity: 1;
+}
 
 
 /* ============================= */
@@ -604,3 +672,5 @@ body {
     font-size: 16px;
   }
 }
+
+

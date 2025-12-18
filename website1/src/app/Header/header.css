@@ -13,24 +13,40 @@
   z-index: 1000;
 }
 
-/* BRAND + LOGO */
+/* BRAND */
 .brand {
   display: flex;
   align-items: center;
+  gap: 12px;
   font-size: 22px;
   font-weight: bold;
-  gap: 10px;
   color: #fff;
 }
+
+/* WHITE ROUND BACKGROUND */
+.logo-bg {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;   /* WHITE BACKGROUND */
+  border-radius: 50%;          /* ROUND SHAPE */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO IMAGE */
+.logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* FIXED HEADER STATE */
 .fixed-header .brand {
-    font-size: 22px;
-    font-weight: bold;
-    color: #fafafa;
+  color: #fafafa;
 }
-.home-icon {
-  font-size: 26px;
-  color: #fff;
-}
+
+
 
 /* NAV MENU */
 .nav-menu {

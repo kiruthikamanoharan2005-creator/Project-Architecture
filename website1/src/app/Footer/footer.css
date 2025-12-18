@@ -1,7 +1,7 @@
 .footer {
-  background: #494747; /* Light gray background */
+  background: #494747;
   padding: 40px 0;
-  color: #333;
+  color: #fff;
   font-family: Arial, sans-serif;
 }
 
@@ -13,11 +13,13 @@
   gap: 40px;
 }
 
+/* LEFT + RIGHT */
 .footer-left,
 .footer-right {
   flex: 1;
 }
 
+/* LEFT TEXT */
 .footer-left h2 {
   font-size: 22px;
   margin-bottom: 10px;
@@ -25,25 +27,71 @@
 
 .footer-left p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
+/* RIGHT TITLE */
 .footer-right h3 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
+/* MAIN CONTACT ROW (address, phone) */
 .footer-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.footer-item i {
-  font-size: 18px;
-  margin-top: 3px;
+/* ICON CIRCLE (ALL ICONS) */
+.footer-item i,
+.contact-row i {
+  font-size: 16px;
+  color: #000;
+  background: #f1c40f;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
+
+/* TEXT */
+.footer-item p {
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* EMAIL + INSTAGRAM STACK */
+.footer-item:last-child {
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* EMAIL / INSTA ROW */
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LINKS */
+.contact-row a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HOVER */
+.contact-row a:hover {
+  color: #f04e30;
+  text-decoration: underline;
+}
+
 
 

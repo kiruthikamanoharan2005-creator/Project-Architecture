@@ -63,8 +63,8 @@ export default function Contact() {
     <>
       <section className="contact-section">
         <Header />
-        <h2>Contact Us</h2>
-        <p>We would love to hear from you! Fill out the form below.</p>
+        <h2>Contact Us for Demo</h2>
+        <p style={{paddingTop:"10px"}}>Make your Dream to be TRUE with CREATIVE EARTH ARCHITECTURE</p>
 
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <input type="text" name="user_name" placeholder="Your Name" required />
@@ -87,6 +87,8 @@ export default function Contact() {
           {errors.email && <p className="error-text">{errors.email}</p>}
 
           <input type="text" name="subject" placeholder="Subject" required />
+          <input type="text" name="type" placeholder="Construction Type" required />
+
 
           <textarea
             name="message"

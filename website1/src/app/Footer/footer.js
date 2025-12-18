@@ -1,14 +1,13 @@
 import React from "react";
-import "./footer.css"; // Make sure this file exists
+import "./footer.css"; 
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Left Section */}
         <div className="footer-left">
-          <h2>Creative Earth Architecture Pvt Ltd</h2>
+          <h2>Creative Earth Architect Pvt Ltd</h2>
           <p>
             Plan & design hub and professional construction company for home,
             villa and office constructions.
@@ -20,28 +19,48 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Right Section */}
         <div className="footer-right">
           <h3>Contact Us</h3>
 
           <div className="footer-item">
             <i className="fa-solid fa-building"></i>
             <p>
-              Innovate Designers & Builders Pvt Ltd, Tc 93/1944, KRA 111A,
-              Railway station road, Pallimuku, Pettah.P.O, Trivandrum,
-              Kerala-695024
+              New Bus Stand, Tirupur.
             </p>
           </div>
 
           <div className="footer-item">
             <i className="fa-solid fa-phone"></i>
-            <p>9995 365 128, 9388 100 090</p>
+            <p>7845409370</p>
           </div>
 
           <div className="footer-item">
-            <i className="fa-solid fa-envelope"></i>
-            <p>info@innovatebuilder.com</p>
+
+            <div className="contact-row">
+              <i className="fa-solid fa-envelope"></i>
+              <a href="mailto:creativecreative818@gmail.com">
+                creativecreative818@gmail.com
+              </a>
+            </div>
+
+            <div className="contact-row">
+              <i className="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/creativeearth87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                creativeearth87
+              </a>
+            </div>
+
           </div>
+
+          {/* <div  className="footer redesigned-footer slide-down">
+        <p>© 2025 Creative Earth. Rooted For Nature, Build For Future.</p>
+</div> */}
+
+
 
         </div>
       </div>
